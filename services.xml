@@ -20,6 +20,8 @@
   <section name="Services">
     <param name="RmsSyncProcess">system.process.ProcessIntegrationClass</param>
         <param name="RmsSyncProcessDummy">system.process.ProcessIntegrationClass</param>
+        <param name="RmsSyncProcessDevelop1">system.process.ProcessIntegrationClass</param>
+        <param name="RmsSyncProcessDevelop2">system.process.ProcessIntegrationClass</param>
 
     <param name="PoftBatchProcess">system.process.ProcessIntegrationClass</param>
     <param name="AoBDWriteOffBatchProcess">system.process.ProcessIntegrationClass</param>
