@@ -1,0 +1,2180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE iniFile SYSTEM "inifile.dtd">
+
+<iniFile>
+
+  <section name="Control">
+    <param name="StartSuspended">#{start.suspended}</param>
+    <param name="Port">#{service.port}</param>
+    <!-- Suppress stats logging for tasks that have a pollinterval less than 5 minutes -->
+    <param name="LogSuppressThreshold">300000</param>
+    <param name="SocketTimeoutInterval">5000</param>
+    <param name="PollInterval">30000</param>
+    <param name="GmtOffsetInHours">-7</param>
+  </section>
+  <section name="ServiceScheduler">
+    <param name="Enabled">#{service.enabled}</param>
+  </section>
+
+  <section name="Services">
+    <param name="RmsSyncProcess">system.process.ProcessIntegrationClass</param>
+    <param name="PoftBatchProcess">system.process.ProcessIntegrationClass</param>
+    <param name="AoBDWriteOffBatchProcess">system.process.ProcessIntegrationClass</param>
+    <param name="SfdcArProcess">system.process.SfdcArProcess</param>
+    <param name="ArSfdcProcess">system.process.ArSfdcProcess</param>
+    <param name="ArSfdcLockProcess">system.process.ArSfdcLockProcess</param>
+    <param name="PaymentProcessAMER">system.process.PaymentProcess</param>
+    <param name="PaymentProcessAPAC">system.process.PaymentProcess</param>
+    <param name="PaymentProcessEMEA">system.process.PaymentProcess</param>
+    <param name="PaymentProcessCANADA">system.process.PaymentProcess</param>
+    <param name="PaymentProcessJAPAN">system.process.PaymentProcess</param>
+    <param name="PaymentProcessANZ">system.process.PaymentProcess</param>
+
+	
+    <param name="RefundProcess">system.process.RefundProcess</param>
+    <param name="BillingProcessAMER">system.process.ProcessIntegrationClass</param>
+    <param name="BillingProcessEMEA">system.process.ProcessIntegrationClass</param>
+    <param name="BillingProcessAPAC">system.process.ProcessIntegrationClass</param>
+    <param name="BillingProcessJAPAN">system.process.ProcessIntegrationClass</param>
+    <param name="BillingProcessCANADA">system.process.ProcessIntegrationClass</param>
+    <param name="BillingProcessANZ">system.process.ProcessIntegrationClass</param>
+    <param name="DunningProcessAMER">system.process.ProcessIntegrationClass</param>
+    <param name="DunningProcessEMEA">system.process.ProcessIntegrationClass</param>
+    <param name="DunningProcessAPAC">system.process.ProcessIntegrationClass</param>
+    <param name="DunningProcessCANADA">system.process.ProcessIntegrationClass</param>
+    <param name="DunningProcessJAPAN">system.process.ProcessIntegrationClass</param>
+    <param name="DunningProcessANZ">system.process.ProcessIntegrationClass</param>
+    <param name="OrgSuspensionProcessAMER">system.process.ProcessIntegrationClass</param>
+    <param name="OrgSuspensionProcessAPAC">system.process.ProcessIntegrationClass</param>
+    <param name="OrgSuspensionProcessJAPAN">system.process.ProcessIntegrationClass</param>
+    <param name="OrgSuspensionProcessEMEA">system.process.ProcessIntegrationClass</param>
+    <param name="OrgSuspensionProcessCANADA">system.process.ProcessIntegrationClass</param>
+    <param name="OrgSuspensionProcessANZ">system.process.ProcessIntegrationClass</param>
+    <param name="InvoiceEmailProcessAMER">system.process.ProcessIntegrationClass</param>
+    <param name="InvoiceEmailProcessAPAC">system.process.ProcessIntegrationClass</param>
+    <param name="InvoiceEmailProcessEMEA">system.process.ProcessIntegrationClass</param>
+    <param name="InvoiceEmailProcessCANADA">system.process.ProcessIntegrationClass</param>
+    <param name="InvoiceEmailProcessJAPAN">system.process.ProcessIntegrationClass</param>
+    <param name="InvoiceEmailProcessANZ">system.process.ProcessIntegrationClass</param>
+    <param name="AutoRenewalProcessAMER">system.process.ProcessIntegrationClass</param>
+    <param name="AutoRenewalProcessAPAC">system.process.ProcessIntegrationClass</param>
+    <param name="AutoRenewalProcessJAPAN">system.process.ProcessIntegrationClass</param>
+    <param name="AutoRenewalProcessEMEA">system.process.ProcessIntegrationClass</param>
+    <param name="AutoRenewalProcessCANADA">system.process.ProcessIntegrationClass</param>
+    <param name="AutoRenewalProcessANZ">system.process.ProcessIntegrationClass</param>
+
+	<param name="EntitlementUsageSyncProcess">system.process.ProcessIntegrationClass</param>
+    <param name="OrderActivationEmailProcessAMER">system.process.ProcessIntegrationClass</param>
+    <param name="OrderActivationEmailProcessAPAC">system.process.ProcessIntegrationClass</param>
+    <param name="OrderActivationEmailProcessJAPAN">system.process.ProcessIntegrationClass</param>
+    <param name="OrderActivationEmailProcessEMEA">system.process.ProcessIntegrationClass</param>
+    <param name="OrderActivationEmailProcessCANADA">system.process.ProcessIntegrationClass</param>
+    <param name="OrderActivationEmailProcessANZ">system.process.ProcessIntegrationClass</param>
+    <param name="OpptyTeamProcess">system.process.ProcessIntegrationClass</param>
+    <param name="OpptyTeamProcess02">system.process.ProcessIntegrationClass</param>
+    <param name="OpptyTeamProcess03">system.process.ProcessIntegrationClass</param>
+    <param name="OpptyTeamProcess04">system.process.ProcessIntegrationClass</param>
+    <param name="OpptyTeamProcess05">system.process.ProcessIntegrationClass</param>
+    <param name="OpptyTeamProcess06">system.process.ProcessIntegrationClass</param>
+    <param name="OpptyTeamProcess07">system.process.ProcessIntegrationClass</param>
+    <param name="OpptyTeamProcess08">system.process.ProcessIntegrationClass</param>
+    <param name="OpptyTeamProcess09">system.process.ProcessIntegrationClass</param>
+    <param name="OpptyTeamProcess10">system.process.ProcessIntegrationClass</param>
+    <param name="OpptyTeamProcess11">system.process.ProcessIntegrationClass</param>
+    <param name="OpptyTeamProcess12">system.process.ProcessIntegrationClass</param>
+    <param name="CreditMemoProcess">system.process.ProcessIntegrationClass</param>
+    <param name="RenewalsCosoGeneration">system.process.ProcessIntegrationClass</param>
+    <param name="CreateRenewalOpptyProcess">system.process.ProcessIntegrationClass</param>
+    <param name="RenewalsOpsoGeneration">system.process.ProcessIntegrationClass</param>
+    <param name="RenewalsBasisCalculationProcess">system.process.ProcessIntegrationClass</param>
+    <param name="OrderTeamProcess">system.process.ProcessIntegrationClass</param>
+    <param name="CommEventIncentiveGenerationEMEA">system.process.ProcessIntegrationClass</param>
+    <param name="CommEventIncentiveGenerationAPAC">system.process.ProcessIntegrationClass</param>
+    <param name="CommEventIncentiveGenerationJAPAN">system.process.ProcessIntegrationClass</param>
+    <param name="CommEventIncentiveGenerationAMER">system.process.ProcessIntegrationClass</param>
+    <param name="CommEventIncentiveGenerationCANADA">system.process.ProcessIntegrationClass</param>
+    <param name="SfdcConvertQuoteProcess">system.process.ProcessIntegrationClass</param>
+    <param name="SfdcConvertQuoteProcess01">system.process.ProcessIntegrationClass</param>
+    <param name="SfdcConvertQuoteProcess02">system.process.ProcessIntegrationClass</param>
+    <param name="SfdcConvertQuoteProcess03">system.process.ProcessIntegrationClass</param>
+    <param name="SfdcConvertQuoteProcess04">system.process.ProcessIntegrationClass</param>
+    <param name="SfdcConvertQuoteProcess05">system.process.ProcessIntegrationClass</param>
+    <param name="SfdcConvertQuoteProcess06">system.process.ProcessIntegrationClass</param>
+    <param name="SfdcConvertQuoteProcess07">system.process.ProcessIntegrationClass</param>
+    <param name="SfdcConvertQuoteProcess08">system.process.ProcessIntegrationClass</param>
+    <param name="SfdcConvertQuoteProcess09">system.process.ProcessIntegrationClass</param>
+    <param name="ServicesContractCreationProcess">system.process.ProcessIntegrationClass</param>
+    <param name="ServicesOrderCreationProcess">system.process.ProcessIntegrationClass</param>
+    <param name="LegalDeniedPartyProcess">system.process.ProcessIntegrationClass</param>
+    <param name="ContractExpirationProcess">system.process.ProcessIntegrationClass</param>
+    <param name="AutoRenewalNotificationProcessAMER">system.process.ProcessIntegrationClass</param>
+    <param name="AutoRenewalNotificationProcessAPAC">system.process.ProcessIntegrationClass</param>
+    <param name="AutoRenewalNotificationProcessEMEA">system.process.ProcessIntegrationClass</param>
+    <param name="AutoRenewalNotificationProcessCANADA">system.process.ProcessIntegrationClass</param>
+    <param name="AutoRenewalNotificationProcessANZ">system.process.ProcessIntegrationClass</param>
+    <param name="AutoRenewalNotificationProcessJAPAN">system.process.ProcessIntegrationClass</param>
+    <param name="CommissioningProcessMultiBatchAMERMonthEnd">system.process.ProcessIntegrationClass</param>
+    <param name="CommissioningProcessMultiBatchEMEAMonthEnd">system.process.ProcessIntegrationClass</param>
+    <param name="CommissioningProcessAMER">system.process.ProcessIntegrationClass</param>
+    <param name="CommissioningProcessAPAC">system.process.ProcessIntegrationClass</param>
+    <param name="CommissioningProcessEMEA">system.process.ProcessIntegrationClass</param>
+    <param name="CommissioningProcessCANADA">system.process.ProcessIntegrationClass</param> 
+    <param name="CommissioningProcessJAPAN">system.process.ProcessIntegrationClass</param>
+    <param name="CommissioningProcessAMERMonthEnd">system.process.ProcessIntegrationClass</param>
+    <param name="CommissioningProcessAPACMonthEnd">system.process.ProcessIntegrationClass</param>
+    <param name="CommissioningProcessEMEAMonthEnd">system.process.ProcessIntegrationClass</param>
+    <param name="CommissioningProcessCANADAMonthEnd">system.process.ProcessIntegrationClass</param> 
+    <param name="CommissioningProcessJAPANMonthEnd">system.process.ProcessIntegrationClass</param>   
+    <param name="DeclineNotificationProcessAMER">system.process.ProcessIntegrationClass</param>
+    <param name="DeclineNotificationProcessAPAC">system.process.ProcessIntegrationClass</param>
+    <param name="DeclineNotificationProcessJAPAN">system.process.ProcessIntegrationClass</param>
+    <param name="DeclineNotificationProcessEMEA">system.process.ProcessIntegrationClass</param>
+    <param name="DeclineNotificationProcessCANADA">system.process.ProcessIntegrationClass</param>
+    <param name="DeclineNotificationProcessANZ">system.process.ProcessIntegrationClass</param>
+    <param name="CourtesyNotificationProcessAMER">system.process.ProcessIntegrationClass</param>
+    <param name="CourtesyNotificationProcessAPAC">system.process.ProcessIntegrationClass</param>
+    <param name="CourtesyNotificationProcessJAPAN">system.process.ProcessIntegrationClass</param>
+    <param name="CourtesyNotificationProcessEMEA">system.process.ProcessIntegrationClass</param>
+    <param name="CourtesyNotificationProcessCANADA">system.process.ProcessIntegrationClass</param>
+    <param name="CourtesyNotificationProcessANZ">system.process.ProcessIntegrationClass</param>
+    <param name="AssetBatchProcess">system.process.ProcessIntegrationClass</param>
+    <param name="AssetExpirationProcess">system.process.ProcessIntegrationClass</param>
+    <param name="SpecialistForecastAutoGenProcess">system.process.ProcessIntegrationClass</param>
+    <param name="SpecialistForecastAutoGenProcess02">system.process.ProcessIntegrationClass</param>
+    <param name="SpecialistForecastAutoGenProcess03">system.process.ProcessIntegrationClass</param>
+    <param name="SpecialistForecastAutoGenProcess04">system.process.ProcessIntegrationClass</param>
+    <param name="SpecialistForecastAutoGenProcess05">system.process.ProcessIntegrationClass</param>
+	<param name="OverageOrderProcess">system.process.ProcessIntegrationClass</param>
+    <param name="RampProcess">system.process.ProcessIntegrationClass</param>
+	<param name="EntitlementCreationProcessAMER">system.process.ProcessIntegrationClass</param>
+	<param name="EntitlementCreationProcessAPAC">system.process.ProcessIntegrationClass</param>
+	<param name="EntitlementCreationProcessJAPAN">system.process.ProcessIntegrationClass</param>
+	<param name="EntitlementCreationProcessEMEA">system.process.ProcessIntegrationClass</param>
+	<param name="EntitlementCreationProcessCANADA">system.process.ProcessIntegrationClass</param>
+ 	<param name="VATProcess">system.process.ProcessIntegrationClass</param>
+ 	<param name="ContractVATValidationProcessEMEA">system.process.ProcessIntegrationClass</param>
+    <param name="Renewals30DEDailyProcess">system.process.ProcessIntegrationClass</param>
+    <param name="Renewals30DEFinalProcess">system.process.ProcessIntegrationClass</param>
+  </section>
+
+  <!-- 
+  Note:
+  - A) The Organization/RelatedAccountOrg will be set to 1 in prod/non sandbox for the time being
+  - B) The Tenant/RelatedAccountTenant will be set to 0 in prod/non sandbox till we decide to switch over from A to B in prod
+       A (default enabled)  will be disabled in SandBox as part of post deploy steps
+       B (default disabled) will be enabled  in SandBox as part of post deploy steps
+  -->  
+  <section name="SfdcArProcess">
+    <!-- Every Two Hour starts at 20:00 PST = 21:00 PDT = 04:00 GMT -->
+    <param name="howOften">7200000</param>
+    <param name="StartHour">04</param>
+    <param name="Invoice">1</param>
+    <param name="CreditMemo">1</param>
+    <param name="Account">1</param>
+    <param name="Contract">1</param>
+    <param name="Organization">1</param>
+    <param name="RelatedAccountOrg">1</param>
+	<param name="Tenant">0</param>
+    <param name="RelatedAccountTenant">0</param>
+    <param name="PaymentRequest">1</param>
+  </section>
+
+  <section name="ArSfdcProcess">
+    <!-- Every Two Hour starts at 21:30 PST = 22:30 PDT = 05:30 GMT -->
+    <param name="howOften">7200000</param>
+    <param name="StartHour">05</param>
+    <param name="StartMinute">30</param>
+    <param name="Invoice">1</param>
+    <param name="BoundCreditMemo">1</param>
+    <param name="UnboundCreditMemo">1</param>
+    <param name="DebitMemo">1</param>
+    <param name="Payment">1</param>
+    <param name="PaymentApplication">1</param>
+    <param name="Adjustment">1</param>
+    <param name="CreditMemoReapply">1</param>
+  </section>
+
+  <!-- starting @ 5:30 GMT = 21:30 PST = 22:30 PDT every day (late night in AMER) -->
+  <section name="PaymentProcessAMER">
+    <param name="StartHour" comment="starting @ 5:30 GMT every day (late night in AMER)">05</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">00</param>
+	<param name="howOften">43200000</param>
+    <param name="Payment">1</param>
+    <param name="ContractSync">1</param>
+    <param name="PaymentHistorySync">1</param>
+    <param name="DateFilter">45</param>
+    <param name="MaxRetryCount">5</param>
+    <param name="RetryDelaySeconds">40</param>
+    <param name="SimulateExceptionCount">0</param>
+    <param name="RevOwner">83</param>
+  </section>
+
+  <!-- starting @ 5:45 GMT = 21:45 PST = 22:45 PDT every day (late night in AMER) -->
+  <section name="PaymentProcessAPAC">
+    <param name="StartHour" comment="starting @ 5:45 GMT every day (late night in AMER)">05</param>
+    <param name="StartMinute">45</param>
+    <param name="StartSecond">00</param>
+	<param name="howOften">43200000</param>
+    <param name="Payment">1</param>
+    <param name="ContractSync">1</param>
+    <param name="PaymentHistorySync">1</param>
+    <param name="DateFilter">45</param>
+    <param name="MaxRetryCount">5</param>
+    <param name="RetryDelaySeconds">40</param>
+    <param name="SimulateExceptionCount">0</param>
+    <param name="RevOwner">90</param>
+  </section>
+
+  <!-- starting @ 5:55 GMT = 21:55 PST = 22:55 PDT every day (late night in AMER) -->
+  <section name="PaymentProcessEMEA">
+    <param name="StartHour" comment="starting @ 5:55 GMT every day (late night in AMER)">05</param>
+    <param name="StartMinute">55</param>
+    <param name="StartSecond">00</param>
+	<param name="howOften">43200000</param>
+    <param name="Payment">1</param>
+    <param name="ContractSync">1</param>
+    <param name="PaymentHistorySync">1</param>
+    <param name="DateFilter">45</param>
+    <param name="MaxRetryCount">5</param>
+    <param name="RetryDelaySeconds">40</param>
+    <param name="SimulateExceptionCount">0</param>
+    <param name="RevOwner">96</param>
+  </section>
+
+  <!-- starting @ 6:05 GMT = 22:05 PST = 23:05 PDT every day (late night in AMER) -->
+  <section name="PaymentProcessJAPAN">
+    <param name="StartHour" comment="starting @ 6:05 GMT every day (late night in AMER)">06</param>
+    <param name="StartMinute">05</param>
+    <param name="StartSecond">00</param>
+	<param name="howOften">43200000</param>
+    <param name="Payment">1</param>
+    <param name="ContractSync">1</param>
+    <param name="PaymentHistorySync">1</param>
+    <param name="DateFilter">45</param>
+    <param name="MaxRetryCount">5</param>
+    <param name="RetryDelaySeconds">40</param>
+    <param name="SimulateExceptionCount">0</param>
+    <param name="RevOwner">92</param>
+  </section>
+
+  <!-- starting @ 6:15 GMT = 22:15 PST = 23:15 PDT every day (late night in AMER) -->
+  <section name="PaymentProcessCANADA">
+    <param name="StartHour" comment="starting @ 6:15 GMT every day (late night in AMER)">06</param>
+    <param name="StartMinute">15</param>
+    <param name="StartSecond">00</param>
+	<param name="howOften">43200000</param>
+    <param name="Payment">1</param>
+    <param name="ContractSync">1</param>
+    <param name="PaymentHistorySync">1</param>
+    <param name="DateFilter">45</param>
+    <param name="MaxRetryCount">5</param>
+    <param name="RetryDelaySeconds">40</param>
+    <param name="SimulateExceptionCount">0</param>
+    <param name="RevOwner">88</param>
+  </section>
+   <!-- starting @ 6:25 GMT = 22:25 PST = 23:25 PDT every day (late night in AMER) -->
+  <section name="PaymentProcessANZ">
+    <param name="StartHour" comment="starting @ 6:25 GMT every day (late night in AMER)">06</param>
+    <param name="StartMinute">25</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">43200000</param>
+    <param name="Payment">1</param>
+    <param name="ContractSync">1</param>
+    <param name="PaymentHistorySync">1</param>
+    <param name="DateFilter">45</param>
+    <param name="MaxRetryCount">5</param>
+    <param name="RetryDelaySeconds">40</param>
+    <param name="SimulateExceptionCount">0</param>
+    <param name="RevOwner">88</param>
+  </section>
+
+  
+  <!-- starting @ 5:00 GMT = 21:00 PST = 22:00 PDT every day (late night in AMER) -->
+  <section name="RefundProcess">
+    <param name="StartHour" comment="starting @ 5:00 GMT every day (late night in AMER)">05</param>
+    <param name="StartMinute">00</param>
+    <param name="StartSecond">00</param>
+    <param name="RefundInvoices">1</param>
+    <param name="Currency">ALL</param>
+  </section>
+
+  <!-- starting @ 02:15 GMT = 19:15 PST = 20:15 PDT every day -->
+  <section name="PoftBatchProcess">
+    <param name="StartHour" comment="starting @ 02:15 AM GMT every day ">02</param>
+    <param name="StartMinute">15</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">86400000</param>
+    <param name="outFile">null</param>
+    <param name="method">PoftBatchProcess.runPoftBatchProcess</param>
+    <param name="size">500</param>
+    <param name="RevOwner">ALL</param>
+    <param name="MaxIterations">1</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{poftbatchapiuser}</param>
+    <param name="Password">#{poftbtchapipasswd}</param>
+  </section>
+
+  <!-- starting @ 12:00 AM GMT  every day -->
+  <section name="AoBDWriteOffBatchProcess">
+    <param name="StartHour" comment="starting @ 12:00 AM GMT every 12 hours (twice a day) ">12</param>
+    <param name="StartMinute">00</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">43200000</param>
+    <param name="outFile">null</param>
+    <param name="method">AoBDWriteOffBatchProcess.runApprovalBatchProcess</param>
+    <!--Need to change size as per requirment -->
+    <param name="size">20</param>
+    <param name="RevOwner">ContractBillOut</param>
+    <param name="MaxIterations">1</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{aobdbatchapiuser}</param>
+    <param name="Password">#{aobdbatchapipasswd}</param>
+  </section>
+
+    <!-- starting @ 12:00 AM GMT  every day -->
+  <section name="AoBDWriteOffBatchProcessContractTermination">
+    <param name="StartHour" comment="starting @ 12:10 AM GMT every 12 hours (twice a day) ">12</param>
+    <param name="StartMinute">10</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">43200000</param>
+    <param name="outFile">null</param>
+    <param name="method">AoBDWriteOffBatchProcess.runApprovalBatchProcess</param>
+    <!--Need to change size as per requirment -->
+    <param name="size">20</param>
+    <param name="RevOwner">ContractTermination</param>
+    <param name="MaxIterations">1</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{aobdbatchapiuser}</param>
+    <param name="Password">#{aobdbatchapipasswd}</param>
+  </section>
+
+   <!-- starting @ 8:00 GMT = 00:00 PST = 01:00 PDT every 6 hours -->
+  <section name="RmsSyncProcess">
+    <param name="StartHour" comment="starting @ 08:00 AM GMT every 6 hr ">08</param>
+    <param name="StartMinute">00</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">21600000</param>
+    <param name="outFile">null</param>
+    <param name="method">RmsSyncProcess.runRmsSyncProcess</param>
+    <param name="size">200</param>
+    <param name="RevOwner">ALL</param>
+    <param name="MaxIterations">1</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{rmssyncapiuser}</param>
+    <param name="Password">#{rmssyncapipasswd}</param>
+    <param name="ReadTimeout">1080000</param>
+  </section>
+  
+  <!-- starting @ 2:55 GMT = 18:55 PST = 19:55 PDT = 3:55 CET every 30 mins -->
+  <section name="BillingProcessEMEA">
+    <param name="StartHour" comment="starting @ 2:55 AM GMT every 2 hr ">02</param>
+    <param name="StartMinute">55</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">7200000</param>
+    <param name="outFile">null</param>
+    <param name="method">storBillingProcess.invokeBillingProcess</param>
+    <param name="size">75</param>
+    <param name="RevOwner">EMEA</param>
+    <param name="MaxIterations">1</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{billingapiuser}</param>
+    <param name="Password">#{billingapipasswd}</param>
+    <param name="ReadTimeout">1080000</param>
+  </section>
+
+  <!-- starting @ 3:00 GMT = 19:00 PST = 20:00 PDT = 11:00 SGT every 30 mins -->
+  <section name="BillingProcessAPAC">
+    <param name="StartHour" comment="starting @ 3 AM GMT every 2 hr ">03</param>
+    <param name="StartMinute">00</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">7200000</param>
+    <param name="outFile">null</param>
+    <param name="method">storBillingProcess.invokeBillingProcess</param>
+    <param name="size">75</param>
+    <param name="RevOwner">APAC</param>
+    <param name="MaxIterations">1</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{billingapiuser}</param>
+    <param name="Password">#{billingapipasswd}</param>
+    <param name="ReadTimeout">1080000</param>
+  </section>
+
+  <!-- starting @ 3:05 GMT = 19:05 PST = 20:05 PDT = 12:05 JST every 30 mins -->
+  <section name="BillingProcessJAPAN">
+    <param name="StartHour" comment="starting @ 3:05 AM GMT every 2 hr ">03</param>
+    <param name="StartMinute">05</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">7200000</param>
+    <param name="outFile">null</param>
+    <param name="method">storBillingProcess.invokeBillingProcess</param>
+    <param name="size">75</param>
+    <param name="RevOwner">JAPAN</param>
+    <param name="MaxIterations">1</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{billingapiuser}</param>
+    <param name="Password">#{billingapipasswd}</param>
+    <param name="ReadTimeout">1080000</param>
+  </section>
+
+  <!-- starting @ 3:10 GMT = 19:10 PST = 20:10 PDT = 22:10 EST every 30 mins -->
+  <section name="BillingProcessCANADA">
+    <param name="StartHour" comment="starting @ 3:10 AM GMT every 2 hr ">03</param>
+    <param name="StartMinute">10</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">7200000</param>
+    <param name="outFile">null</param>
+    <param name="method">storBillingProcess.invokeBillingProcess</param>
+    <param name="size">75</param>
+    <param name="RevOwner">CANADA</param>
+    <param name="MaxIterations">1</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{billingapiuser}</param>
+    <param name="Password">#{billingapipasswd}</param>
+    <param name="ReadTimeout">1080000</param>
+  </section>
+
+  <!-- starting @ 3:15 GMT = 19:15 PST = 20:15 PDT every 30 mins -->
+  <section name="BillingProcessAMER">
+    <param name="StartHour" comment="starting @ 3:15 AM GMT every 2 hr">03</param>
+    <param name="howOften">7200000</param>
+    <param name="StartMinute">15</param>
+    <param name="StartSecond">00</param>
+    <param name="outFile">null</param>
+    <param name="method">storBillingProcess.invokeBillingProcess</param>
+    <param name="size">75</param>
+    <param name="RevOwner">AMER</param>
+    <param name="MaxIterations">1</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{billingapiuser}</param>
+    <param name="Password">#{billingapipasswd}</param>
+    <param name="ReadTimeout">1080000</param>
+  </section>
+     <!-- starting @ 3:20 GMT = 19:20 PST = 20:20 PDT every 2 hr -->
+  <section name="BillingProcessANZ">
+    <param name="StartHour" comment="starting @ 3:20 AM GMT every 2 hr">03</param>
+    <param name="howOften">7200000</param>
+    <param name="StartMinute">15</param>
+    <param name="StartSecond">00</param>
+    <param name="outFile">null</param>
+    <param name="method">storBillingProcess.invokeBillingProcess</param>
+    <param name="size">75</param>
+    <param name="RevOwner">AMER</param>
+    <param name="MaxIterations">1</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{billingapiuser}</param>
+    <param name="Password">#{billingapipasswd}</param>
+    <param name="StartSuspended">1</param>
+  </section>
+
+  <!-- starting @ 7:30 GMT = 23:30 PST = 24:30 PDT every 1x a day -->
+  <section name="DunningProcessEMEA">
+    <param name="StartHour" comment="starting @ 07:30 GMT every 4x a day ">07</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">00</param>
+    <param name="method">storDunningProcess.runDunningProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">10</param>
+    <param name="RevOwner">EMEA</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{dunningapiuser}</param>
+    <param name="Password">#{dunningapipasswd}</param>
+  </section>
+
+  <!-- starting @ 7:40 GMT = 23:40 PST = 24:40 PDT every 1x a day -->
+  <section name="DunningProcessAPAC">
+    <param name="StartHour" comment="starting @ 7:40 GMT every 4x a day ">07</param>
+    <param name="StartMinute">40</param>
+    <param name="StartSecond">00</param>
+    <param name="method">storDunningProcess.runDunningProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">10</param>
+    <param name="RevOwner">APAC</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{dunningapiuser}</param>
+    <param name="Password">#{dunningapipasswd}</param>
+  </section>
+
+    <!-- starting @ 7:45 GMT = 23:45 PST = 24:45 PDT every 1x a day -->
+  <section name="DunningProcessANZ">
+    <param name="StartHour" comment="starting @ 7:45 GMT every 4x a day ">07</param>
+    <param name="StartMinute">45</param>
+    <param name="StartSecond">00</param>
+    <param name="method">storDunningProcess.runDunningProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">10</param>
+    <param name="RevOwner">APAC</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{dunningapiuser}</param>
+    <param name="Password">#{dunningapipasswd}</param>
+  </section>
+
+
+  <!-- starting @ 7:50 GMT = 23:50 PST = 24:50 PDT every 1x a day -->
+  <section name="DunningProcessCANADA">
+    <param name="StartHour" comment="starting @ 07:50 AM GMT every 4x a day">07</param>
+    <param name="StartMinute">50</param>
+    <param name="StartSecond">00</param>
+    <param name="method">storDunningProcess.runDunningProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">10</param>
+    <param name="RevOwner">CANADA</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{dunningapiuser}</param>
+    <param name="Password">#{dunningapipasswd}</param>
+  </section>
+
+  <!-- starting @ 8:00 GMT = 24:00 PST = 25:00 PDT every 1x a day -->
+  <section name="DunningProcessJAPAN">
+    <param name="StartHour" comment="starting @ 08:00 AM GMT every 4x a day">08</param>
+    <param name="StartMinute">00</param>
+    <param name="StartSecond">00</param>
+    <param name="method">storDunningProcess.runDunningProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">10</param>
+    <param name="RevOwner">JAPAN</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{dunningapiuser}</param>
+    <param name="Password">#{dunningapipasswd}</param>
+  </section>
+
+  <!-- starting @ 8:10 GMT = 24:10 PST = 25:10 PDT every 1x a day -->
+  <section name="DunningProcessAMER">
+    <param name="StartHour" comment="starting @ 08:10 AM GMT every 4x a day">08</param>
+    <param name="StartMinute">10</param>
+    <param name="StartSecond">00</param>
+    <param name="method">storDunningProcess.runDunningProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">10</param>
+    <param name="RevOwner">AMER</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{dunningapiuser}</param>
+    <param name="Password">#{dunningapipasswd}</param>
+  </section>
+
+  
+  <!-- starting @ 17:30 GMT = 9:30 PST = 10:30 PDT every day (morning in AMER) -->
+  <section name="CourtesyNotificationProcessAMER">
+    <param name="StartHour" comment="starting @ 5:30 PM GMT every day (morning in AMER)">17</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">00</param>
+    <param name="method">CourtesyNotificationProcess.runCourtesyProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">10</param>
+    <param name="RevOwner">AMER</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{dunningapiuser}</param>
+    <param name="Password">#{dunningapipasswd}</param>
+  </section>
+  
+  <!-- starting @ 3:00 GMT = 19:00 PST = 20:00 PDT every day (late night in AMER) -->
+  <section name="CourtesyNotificationProcessAPAC">
+    <param name="StartHour" comment="starting @ 3:00 AM GMT every day ((morning in APAC)">03</param>
+    <param name="StartMinute">00</param>
+    <param name="StartSecond">00</param>
+    <param name="method">CourtesyNotificationProcess.runCourtesyProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">10</param>
+    <param name="RevOwner">APAC</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{dunningapiuser}</param>
+    <param name="Password">#{dunningapipasswd}</param>
+  </section>
+    <!-- starting @ 3:05 GMT = 19:05 PST = 20:05 PDT every day (late night in AMER) -->
+  <section name="CourtesyNotificationProcessANZ">
+    <param name="StartHour" comment="starting @ 3:05 AM GMT every day ((morning in APAC)">03</param>
+    <param name="StartMinute">05</param>
+    <param name="StartSecond">00</param>
+    <param name="method">CourtesyNotificationProcess.runCourtesyProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">10</param>
+    <param name="RevOwner">APAC</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{dunningapiuser}</param>
+    <param name="Password">#{dunningapipasswd}</param>
+  </section>
+  
+  <!-- starting @ 08:30 GMT = 12:30 AM PST = 01:30 PDT every day (late night in AMER) -->
+  <section name="CourtesyNotificationProcessEMEA">
+    <param name="StartHour" comment="starting @ 08:30 AM GMT every day ((morning in EMEA)">08</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">00</param>
+    <param name="method">CourtesyNotificationProcess.runCourtesyProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">10</param>
+    <param name="RevOwner">EMEA</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{dunningapiuser}</param>
+    <param name="Password">#{dunningapipasswd}</param>
+  </section>
+
+  <!-- starting @ 2:30 GMT = 18:30 PST = 19:30 PDT every day (late night in AMER) -->
+  <section name="CourtesyNotificationProcessJAPAN">
+    <param name="StartHour" comment="starting @ 2:30 AM GMT every day ((morning in JAPAN)">02</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">00</param>
+    <param name="method">CourtesyNotificationProcess.runCourtesyProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">10</param>
+    <param name="RevOwner">JAPAN</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{dunningapiuser}</param>
+    <param name="Password">#{dunningapipasswd}</param>
+  </section>
+
+  <!-- starting @ 17:30 GMT = 09:30 PST = 24:00 PDT every day (late night in AMER) -->
+  <section name="CourtesyNotificationProcessCANADA">
+    <param name="StartHour" comment="starting @ 7:00 AM GMT every day ((morning in CANADA">17</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">00</param>
+    <param name="method">CourtesyNotificationProcess.runCourtesyProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">10</param>
+    <param name="RevOwner">CANADA</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{dunningapiuser}</param>
+    <param name="Password">#{dunningapipasswd}</param>
+  </section>
+
+  <!-- starting @ 17:00 GMT = 9:00 PST = 10:00 PDT every day (morning in AMER) -->
+  <section name="OrgSuspensionProcessAMER">
+    <param name="StartHour" comment="starting @ 5:00 PM GMT every day (morning in AMER)">17</param>
+    <param name="StartMinute">00</param>
+    <param name="StartSecond">00</param>
+    <param name="method">OrgSuspensionProcess.runOrgSuspensionProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">10</param>
+    <param name="RevOwner">AMER</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{orgsuspapiuser}</param>
+    <param name="Password">#{orgsuspapipasswd}</param>
+  </section>
+  
+  <!-- starting @ 2:30 GMT = 18:30 PST = 19:30 PDT every day (late night in AMER) -->
+  <section name="OrgSuspensionProcessAPAC">
+    <param name="StartHour" comment="starting @ 2:30 AM GMT every day ((morning in APAC)">02</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">00</param>
+    <param name="method">OrgSuspensionProcess.runOrgSuspensionProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">10</param>
+    <param name="RevOwner">APAC</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{orgsuspapiuser}</param>
+    <param name="Password">#{orgsuspapipasswd}</param>
+  </section>
+  <!-- starting @ 2:35 GMT = 18:35 PST = 19:35 PDT every day (late night in AMER) -->
+  <section name="OrgSuspensionProcessANZ">
+    <param name="StartHour" comment="starting @ 2:35 AM GMT every day ((morning in APAC)">02</param>
+    <param name="StartMinute">35</param>
+    <param name="StartSecond">00</param>
+    <param name="method">OrgSuspensionProcess.runOrgSuspensionProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">10</param>
+    <param name="RevOwner">APAC</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{orgsuspapiuser}</param>
+    <param name="Password">#{orgsuspapipasswd}</param>
+  </section>
+  
+  <!-- starting @ 10:00 GMT = 02:00 AM PST = 03:00 PDT every day (late night in AMER) -->
+  <section name="OrgSuspensionProcessEMEA">
+    <param name="StartHour" comment="starting @ 10:00 AM GMT every day ((morning in EMEA)">10</param>
+    <param name="StartMinute">00</param>
+    <param name="StartSecond">00</param>
+    <param name="method">OrgSuspensionProcess.runOrgSuspensionProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">10</param>
+    <param name="RevOwner">EMEA</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{orgsuspapiuser}</param>
+    <param name="Password">#{orgsuspapipasswd}</param>
+  </section>
+
+  <!-- starting @ 2:00 GMT = 18:00 PST = 19:00 PDT every day (late night in AMER) -->
+  <section name="OrgSuspensionProcessJAPAN">
+    <param name="StartHour" comment="starting @ 2:00 AM GMT every day ((morning in JAPAN)">02</param>
+    <param name="StartMinute">00</param>
+    <param name="StartSecond">00</param>
+    <param name="method">OrgSuspensionProcess.runOrgSuspensionProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">10</param>
+    <param name="RevOwner">JAPAN</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{orgsuspapiuser}</param>
+    <param name="Password">#{orgsuspapipasswd}</param>
+  </section>
+
+  <!-- starting @ 17:00 GMT = 09:00 PST = 23:30 PDT every day (late night in AMER) -->
+  <section name="OrgSuspensionProcessCANADA">
+    <param name="StartHour" comment="starting @ 6:30 AM GMT every day ((morning in CANADA">17</param>
+    <param name="StartMinute">00</param>
+    <param name="StartSecond">00</param>
+    <param name="method">OrgSuspensionProcess.runOrgSuspensionProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">10</param>
+    <param name="RevOwner">CANADA</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{orgsuspapiuser}</param>
+    <param name="Password">#{orgsuspapipasswd}</param>
+  </section>  
+  <!-- starting @ 06:15 GMT = 22:15 PST = 23:15 PDT every 4x a day (late night in AMER) -->
+  <section name="InvoiceEmailProcessAMER">
+    <param name="StartHour" comment="starting @ 06:00 GMT every 4x a day (late night in AMER)">06</param>
+    <param name="StartMinute">15</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">21600000</param>
+    <param name="method">InvoiceEmailer.runInvoiceEmailProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">20</param>
+    <param name="RevOwner">AMER</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{invemailapiuser}</param>
+    <param name="Password">#{invemailapipasswd}</param>
+  </section>
+  
+  <!-- starting @ 07:15 GMT = 23:15 PST = 00:15 PDT every 4x a day (late night in AMER) -->
+  <section name="InvoiceEmailProcessEMEA">
+    <param name="StartHour" comment="starting @ 07:00 GMT every 4x a day (late night in AMER)">07</param>
+    <param name="StartMinute">15</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">21600000</param>
+    <param name="method">InvoiceEmailer.runInvoiceEmailProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">20</param>
+    <param name="RevOwner">EMEA</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{invemailapiuser}</param>
+    <param name="Password">#{invemailapipasswd}</param>
+  </section>
+  
+  <!-- starting @ 08:15 GMT = 00:15 PST = 01:15 PDT every 4x a day (late night in AMER) -->
+  <section name="InvoiceEmailProcessAPAC">
+    <param name="StartHour" comment="starting @ 08:00 GMT every 4x a day (late night in AMER)">08</param>
+    <param name="StartMinute">15</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">21600000</param>
+    <param name="method">InvoiceEmailer.runInvoiceEmailProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">20</param>
+    <param name="RevOwner">APAC</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{invemailapiuser}</param>
+    <param name="Password">#{invemailapipasswd}</param>
+  </section>
+    <!-- starting @ 08:20 GMT = 00:20 PST = 01:20 PDT every 4x a day (late night in AMER) -->
+  <section name="InvoiceEmailProcessANZ">
+    <param name="StartHour" comment="starting @ 08:00 GMT every 4x a day (late night in AMER)">08</param>
+    <param name="StartMinute">20</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">21600000</param>
+    <param name="method">InvoiceEmailer.runInvoiceEmailProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">20</param>
+    <param name="RevOwner">APAC</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{invemailapiuser}</param>
+    <param name="Password">#{invemailapipasswd}</param>
+  </section>
+  
+  <!-- starting @ 09:15 GMT = 01:15 PST = 02:15 PDT every 4x a day (late night in AMER) -->
+  <section name="InvoiceEmailProcessCANADA">
+    <param name="StartHour" comment="starting @ 09:00 GMT every 4x a day (late night in AMER)">09</param>
+    <param name="StartMinute">15</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">21600000</param>
+    <param name="method">InvoiceEmailer.runInvoiceEmailProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">20</param>
+    <param name="RevOwner">CANADA</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{invemailapiuser}</param>
+    <param name="Password">#{invemailapipasswd}</param>
+  </section>
+  
+  <!-- starting @ 10:15 GMT = 02:15 PST = 03:15 PDT every 4x a day (late night in AMER) -->
+  <section name="InvoiceEmailProcessJAPAN">
+    <param name="StartHour" comment="starting @ 10:00 GMT every 4x a day (late night in AMER)">10</param>
+    <param name="StartMinute">15</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">21600000</param>
+    <param name="method">InvoiceEmailer.runInvoiceEmailProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">20</param>
+    <param name="RevOwner">JAPAN</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{invemailapiuser}</param>
+    <param name="Password">#{invemailapipasswd}</param>
+  </section>
+  
+
+  <!-- starting @ 2:25 AM GMT = 18:25 PST = 19:25 PDT = 3:25 CET every 2 hr -->
+  <section name="AutoRenewalProcessEMEA">
+    <param name="StartHour" comment="starting @ 2:25 GMT every 2 hr ">02</param>
+    <param name="StartMinute">25</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">7200000</param>
+    <param name="method">AutoRenewalProcess.runAutoRenewalProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">1</param>
+    <param name="RevOwner">EMEA</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{autorenapiuser}</param>
+    <param name="Password">#{autorenapipasswd}</param>
+  </section>
+
+  <!-- starting @ 2:30 AM GMT = 18:30 PST = 19:30 PDT = 10:30 SGT every 2 hr -->
+  <section name="AutoRenewalProcessAPAC">
+    <param name="StartHour" comment="starting @ 2:30 AM GMT every 2 hr ">02</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">7200000</param>
+    <param name="method">AutoRenewalProcess.runAutoRenewalProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">1</param>
+    <param name="RevOwner">APAC</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{autorenapiuser}</param>
+    <param name="Password">#{autorenapipasswd}</param>
+  </section>
+
+  <!-- starting @ 2:35 AM GMT = 18:35 PST = 19:35 PDT = 11:35 JST every 2 hr -->
+  <section name="AutoRenewalProcessJAPAN">
+    <param name="StartHour" comment="starting @ 2:35 AM GMT every 2 hr ">02</param>
+    <param name="StartMinute">35</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">7200000</param>
+    <param name="method">AutoRenewalProcess.runAutoRenewalProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">1</param>
+    <param name="RevOwner">JAPAN</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{autorenapiuser}</param>
+    <param name="Password">#{autorenapipasswd}</param>
+  </section>
+
+  <!-- starting @ 2:40 AM GMT = 18:40 PST = 19:40 PDT = 22:40 EST every 2 hr -->
+  <section name="AutoRenewalProcessCANADA">
+    <param name="StartHour" comment="starting @ 2:40 AM GMT every 2 hr ">02</param>
+    <param name="StartMinute">40</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">7200000</param>
+    <param name="method">AutoRenewalProcess.runAutoRenewalProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">1</param>
+    <param name="RevOwner">CANADA</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{autorenapiuser}</param>
+    <param name="Password">#{autorenapipasswd}</param>
+  </section>
+    <!-- starting @ 2:45AM GMT = 18:45 PST = 19:45 PDT = 22:45 EST every 2 hr -->
+  <section name="AutoRenewalProcessANZ">
+    <param name="StartHour" comment="starting @ 2:45 AM GMT every 2 hr ">02</param>
+    <param name="StartMinute">45</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">7200000</param>
+    <param name="method">AutoRenewalProcess.runAutoRenewalProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">1</param>
+    <param name="RevOwner">CANADA</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{autorenapiuser}</param>
+    <param name="Password">#{autorenapipasswd}</param>
+    <param name="StartSuspended">1</param>
+  </section>
+
+  <!-- starting @ 2:45 AM GMT = 18:45 PST = 19:45 PDT every 2 hr -->
+  <section name="AutoRenewalProcessAMER">
+    <param name="StartHour" comment="starting @ 2:45 AM GMT every 2 hr">02</param>
+    <param name="StartMinute">45</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">7200000</param>
+    <param name="method">AutoRenewalProcess.runAutoRenewalProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">1</param>
+    <param name="RevOwner">AMER</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{autorenapiuser}</param>
+    <param name="Password">#{autorenapipasswd}</param>
+  </section>
+
+  <!-- starting @ 10:30 GMT = 02:30 PST = 03:30 PDT every day (late night in US) -->
+  <section name="EntitlementUsageSyncProcess">
+  	<param name="StartHour" comment="starting @ 10:30 GMT every day (late night in US)">10</param>
+  	<param name="StartMinute">30</param>
+  	<param name="StartSecond">00</param>
+ 	<param name="method">EntitlementUsageSync.syncEntitlementUsageData</param>
+  	<param name="outFile">null</param>
+  	<param name="size">1000</param>
+  	<param name="RevOwner">ExactTarget</param>
+  	<param name="enableResponseLog">false</param>
+  	<param name="Username">#{entitleapiuser}</param>
+  	<param name="Password">#{entitleapipasswd}</param>
+  </section>
+      
+  <!-- starting @ 7:10 GMT = 23:10 PST = 00:10 PDT = 8:10 CET every 4x a day -->
+  <section name="OrderActivationEmailProcessEMEA">
+    <param name="StartHour" comment="starting @ 07:10 GMT every 4x a day ">07</param>
+    <param name="StartMinute">10</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">21600000</param>
+    <param name="method">OrderActivationEmailProcess.runOrderActivationEmailProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">100</param>
+    <param name="RevOwner">EMEA</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{orderactapiuser}</param>
+    <param name="Password">#{orderactapipasswd}</param>
+  </section>
+
+  <!-- starting @ 7:15 GMT = 23:15 PST = 00:15 PDT = 8:15 CET every 4x a day -->
+  <section name="OrderActivationEmailProcessAPAC">
+    <param name="StartHour" comment="starting @ 7:15 GMT every 4x a day ">07</param>
+    <param name="StartMinute">15</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">21600000</param>
+    <param name="method">OrderActivationEmailProcess.runOrderActivationEmailProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">100</param>
+    <param name="RevOwner">APAC</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{orderactapiuser}</param>
+    <param name="Password">#{orderactapipasswd}</param>
+  </section>
+
+  <!-- starting @ 7:20 GMT = 23:20 PST = 00:20 PDT = 8:20 CET every 4x a day -->
+  <section name="OrderActivationEmailProcessJAPAN">
+    <param name="StartHour" comment="starting @ 7:20 AM GMT every 4x a day">07</param>
+    <param name="StartMinute">20</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">21600000</param>
+    <param name="method">OrderActivationEmailProcess.runOrderActivationEmailProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">100</param>
+    <param name="RevOwner">JAPAN</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{orderactapiuser}</param>
+    <param name="Password">#{orderactapipasswd}</param>
+  </section>
+
+  <!-- starting @ 7:25 GMT = 23:25 PST = 00:25 PDT = 8:25 CET every 4x a day -->
+  <section name="OrderActivationEmailProcessCANADA">
+    <param name="StartHour" comment="starting @ 07:25 AM GMT every 4x a day">07</param>
+    <param name="StartMinute">25</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">21600000</param>
+    <param name="method">OrderActivationEmailProcess.runOrderActivationEmailProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">100</param>
+    <param name="RevOwner">CANADA</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{orderactapiuser}</param>
+    <param name="Password">#{orderactapipasswd}</param>
+  </section>
+
+  <!-- starting @ 7:30 GMT = 23:30 PST = 00:30 PDT = 8:30 CET every 4x a day -->
+  <section name="OrderActivationEmailProcessAMER">
+    <param name="StartHour" comment="starting @ 7:30 GMT every 4x a day">07</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">21600000</param>
+    <param name="method">OrderActivationEmailProcess.runOrderActivationEmailProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">100</param>
+    <param name="RevOwner">AMER</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{orderactapiuser}</param>
+    <param name="Password">#{orderactapipasswd}</param>
+  </section>
+   <!-- starting @ 7:35 GMT = 23:35 PST = 00:35 PDT = 8:35 CET every 4x a day -->
+  <section name="OrderActivationEmailProcessANZ">
+    <param name="StartHour" comment="starting @ 7:35 GMT every 4x a day">07</param>
+    <param name="StartMinute">35</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">21600000</param>
+    <param name="method">OrderActivationEmailProcess.runOrderActivationEmailProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">100</param>
+    <param name="RevOwner">AMER</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{orderactapiuser}</param>
+    <param name="Password">#{orderactapipasswd}</param>
+  </section>
+
+  <!-- starting @ 00:05 GMT = 16:05 PST = 17:05 PDT = 8:05 SGT every 15 min -->
+  <section name="CreditMemoProcess">
+    <param name="StartHour" comment="starting @ 0:05 AM GMT every 15 min ">00</param>
+    <param name="StartMinute">05</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">900000</param>
+    <param name="outFile">null</param>
+    <param name="method">CreditMemoProcess.runCreditMemoProcess</param>
+    <param name="RevOwner">All</param>
+    <param name="size">100</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{cmapiuser}</param>
+    <param name="Password">#{cmapipasswd}</param>
+  </section>
+
+  <!-- starting @ 01:00 GMT = 17:00 PST = 18:00 PDT = 9:00 SGT -->
+  <section name="RenewalsCosoGeneration">
+    <param name="StartHour" comment="starting @ 01:00 AM GMT every 2 hrs ">01</param>
+    <param name="StartMinute">00</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">7200000</param>
+    <param name="outFile">null</param>
+    <param name="method">RenewalsCosoGeneration.runCosoProcessWS</param>
+    <param name="RevOwner">All</param>
+    <param name="size">60</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{ordsumapiuser}</param>
+    <param name="Password">#{ordsumapipasswd}</param>
+  </section>
+
+  <!-- starting @ 00:15 GMT = 16:15 PST = 17:15 PDT = 8:15 SGT -->
+  <section name="CreateRenewalOpptyProcess">
+    <param name="StartHour" comment="starting @ 00:15 AM GMT every day ">00</param>
+    <param name="StartMinute">15</param>
+    <param name="StartSecond">00</param>
+    <param name="outFile">null</param>
+    <param name="method">CreateRenewalOpptyProcess.runRenewalOpptyProcess</param>
+    <param name="RevOwner">All</param>
+    <param name="size">1</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{ordsumapiuser}</param>
+    <param name="Password">#{ordsumapipasswd}</param>
+  </section>
+
+  <!-- starting @ 01:30 GMT = 17:30 PST = 18:30 PDT = 9:30 SGT -->
+  <section name="RenewalsOpsoGeneration">
+    <param name="StartHour" comment="starting @ 01:30 AM GMT every 15 mins ">01</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">900000</param>
+    <param name="outFile">null</param>
+    <param name="method">RenewalsOpsoGeneration.runOpsoRecreationProcess</param>
+    <param name="RevOwner">All</param>
+    <param name="size">10</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{ordsumapiuser}</param>
+    <param name="Password">#{ordsumapipasswd}</param>
+  </section>
+
+  <!-- starting @ 00:30 GMT = 16:30 PST = 17:30 PDT = 8:30 SGT every hr -->
+  <section name="RenewalsBasisCalculationProcess">
+    <param name="StartHour" comment="starting @ 00:30 AM GMT every hr ">00</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">3600000</param>
+    <param name="outFile">null</param>
+    <param name="method">RenewalsBasisCalculationProcess.runProcessBatchMode</param>
+    <param name="RevOwner">All</param>
+    <param name="size">1</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{dealsummaryapiuser}</param>
+    <param name="Password">#{dealsummaryapipasswd}</param>
+  </section>
+
+  <!-- starting @ 00:50 GMT = 16:50 PST = 17:50 PDT = 8:50 SGT every hr -->
+  <section name="OrderTeamProcess">
+    <param name="StartHour" comment="starting @ 00:50 AM GMT every hr ">00</param>
+    <param name="StartMinute">50</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">3600000</param>
+    <param name="outFile">null</param>
+    <param name="method">OrderTeamProcess.runOrderTeamCreationProcessBulk</param>
+    <param name="RevOwner">All</param>
+    <!-- Going forward, the OrderTeamProcess size is determined by custom metadata type setting (basebiz\sfdc\metadata\customMetadata\OrderTeamProcessSize.md)  -->
+    <param name="size">20</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{orderteamapiuser}</param>
+    <param name="Password">#{orderteamapipasswd}</param>
+  </section>
+      
+    <!-- starting @ 00:05 GMT = 16:05 PST = 17:05 PDT = 8:05 SGT every hr -->
+  <section name="CommEventIncentiveGenerationEMEA">
+    <param name="StartHour" comment="starting @ 00:05 AM GMT every hr ">00</param>
+    <param name="StartMinute">05</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">3600000</param>
+    <param name="method">CommEventIncentiveGeneration.runCEIRegenerationProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">100</param>
+    <param name="RevOwner">EMEA</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{commissionapiuser}</param>
+    <param name="Password">#{commissionapipasswd}</param>
+  </section>
+
+  <!-- starting @ 00:10 GMT = 16:10 PST = 17:10 PDT = 8:10 SGT every hr -->
+  <section name="CommEventIncentiveGenerationAPAC">
+    <param name="StartHour" comment="starting @ 00:10 AM GMT every hr ">00</param>
+    <param name="StartMinute">10</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">3600000</param>
+    <param name="method">CommEventIncentiveGeneration.runCEIRegenerationProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">100</param>
+    <param name="RevOwner">APAC</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{commissionapiuser}</param>
+    <param name="Password">#{commissionapipasswd}</param>
+  </section>
+
+  <!-- starting @ 00:15 GMT = 16:15 PST = 17:15 PDT = 8:15 SGT every hr -->
+  <section name="CommEventIncentiveGenerationJAPAN">
+    <param name="StartHour" comment="starting @ 00:15 AM GMT every hr ">00</param>
+    <param name="StartMinute">15</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">3600000</param>
+    <param name="method">CommEventIncentiveGeneration.runCEIRegenerationProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">100</param>
+    <param name="RevOwner">JAPAN</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{commissionapiuser}</param>
+    <param name="Password">#{commissionapipasswd}</param>
+  </section>
+
+
+  <!-- starting @ 00:20 GMT = 16:20 PST = 17:20 PDT = 8:20 SGT every hr -->
+  <section name="CommEventIncentiveGenerationCANADA">
+    <param name="StartHour" comment="starting @ 00:20 AM GMT every hr ">00</param>
+    <param name="StartMinute">20</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">3600000</param>
+    <param name="method">CommEventIncentiveGeneration.runCEIRegenerationProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">100</param>
+    <param name="RevOwner">CANADA</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{commissionapiuser}</param>
+    <param name="Password">#{commissionapipasswd}</param>
+  </section>
+
+
+  <!-- starting @ 00:25 GMT = 16:25 PST = 17:25 PDT = 8:25 SGT every hr -->
+  <section name="CommEventIncentiveGenerationAMER">
+    <param name="StartHour" comment="starting @ 00:25 AM GMT every hr ">00</param>
+    <param name="StartMinute">25</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">3600000</param>
+    <param name="method">CommEventIncentiveGeneration.runCEIRegenerationProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">100</param>
+    <param name="RevOwner">AMER</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{commissionapiuser}</param>
+    <param name="Password">#{commissionapipasswd}</param>
+  </section>
+
+  <!-- starting @ 00:30 GMT = 16:30 PST = 17:30 PDT = 8:30 SGT every 10 min -->
+  <section name="SfdcConvertQuoteProcess">
+    <param name="StartHour" comment="starting @ 00:30 AM GMT every 10 min ">00</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">600000</param>
+    <param name="method">SfdcConvertQuoteProcess.invokeConversions</param>
+    <param name="outFile">null</param>
+    <param name="size">1</param>
+    <param name="RevOwner">All</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{sfdcconvertquoteapiuser}</param>
+    <param name="Password">#{sfdcconvertquoteapipasswd}</param>
+  </section>
+  
+    <!-- starting @ 00:30 GMT = 16:30 PST = 17:30 PDT = 8:30 SGT every 10 min -->
+  <section name="SfdcConvertQuoteProcess01">
+    <param name="StartHour" comment="starting @ 00:30 AM GMT every 10 min ">00</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">01</param>
+    <param name="howOften">600000</param>
+    <param name="method">SfdcConvertQuoteProcess.invokeConversions1</param>
+    <param name="outFile">null</param>
+    <param name="size">1</param>
+    <param name="RevOwner">All</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{sfdcconvertquoteapiuser}</param>
+    <param name="Password">#{sfdcconvertquoteapipasswd}</param>
+  </section>
+  
+  <!-- starting @ 00:30 GMT = 16:30 PST = 17:30 PDT = 8:30 SGT every 10 min -->
+ <section name="SfdcConvertQuoteProcess02">
+    <param name="StartHour" comment="starting @ 00:30 AM GMT every 10 min ">00</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">02</param>
+    <param name="howOften">600000</param>
+    <param name="method">SfdcConvertQuoteProcess.invokeConversions2</param>
+    <param name="outFile">null</param>
+    <param name="size">1</param>
+    <param name="RevOwner">All</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{sfdcconvertquoteapiuser}</param>
+    <param name="Password">#{sfdcconvertquoteapipasswd}</param>
+  </section>
+  
+  <!-- starting @ 00:30 GMT = 16:30 PST = 17:30 PDT = 8:30 SGT every 10 min -->
+ <section name="SfdcConvertQuoteProcess03">
+    <param name="StartHour" comment="starting @ 00:30 AM GMT every 10 min ">00</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">03</param>
+    <param name="howOften">600000</param>
+    <param name="method">SfdcConvertQuoteProcess.invokeConversions3</param>
+    <param name="outFile">null</param>
+    <param name="size">1</param>
+    <param name="RevOwner">All</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{sfdcconvertquoteapiuser}</param>
+    <param name="Password">#{sfdcconvertquoteapipasswd}</param>
+  </section>
+  
+  <!-- starting @ 00:30 GMT = 16:30 PST = 17:30 PDT = 8:30 SGT every 10 min -->
+ <section name="SfdcConvertQuoteProcess04">
+    <param name="StartHour" comment="starting @ 00:30 AM GMT every 10 min ">00</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">04</param>
+    <param name="howOften">600000</param>
+    <param name="method">SfdcConvertQuoteProcess.invokeConversions4</param>
+    <param name="outFile">null</param>
+    <param name="size">1</param>
+    <param name="RevOwner">All</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{sfdcconvertquoteapiuser}</param>
+    <param name="Password">#{sfdcconvertquoteapipasswd}</param>
+  </section>
+  
+  <!-- starting @ 00:30 GMT = 16:30 PST = 17:30 PDT = 8:30 SGT every 10 min -->
+ <section name="SfdcConvertQuoteProcess05">
+    <param name="StartHour" comment="starting @ 00:30 AM GMT every 10 min ">00</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">05</param>
+    <param name="howOften">600000</param>
+    <param name="method">SfdcConvertQuoteProcess.invokeConversions5</param>
+    <param name="outFile">null</param>
+    <param name="size">1</param>
+    <param name="RevOwner">All</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{sfdcconvertquoteapiuser}</param>
+    <param name="Password">#{sfdcconvertquoteapipasswd}</param>
+  </section>
+  
+  <!-- starting @ 00:30 GMT = 16:30 PST = 17:30 PDT = 8:30 SGT every 10 min -->
+  <section name="SfdcConvertQuoteProcess06">
+    <param name="StartHour" comment="starting @ 00:30 AM GMT every 10 min ">00</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">06</param>
+    <param name="howOften">600000</param>
+    <param name="method">SfdcConvertQuoteProcess.invokeConversions6</param>
+    <param name="outFile">null</param>
+    <param name="size">1</param>
+    <param name="RevOwner">All</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{sfdcconvertquoteapiuser}</param>
+    <param name="Password">#{sfdcconvertquoteapipasswd}</param>
+  </section>
+  
+  <!-- starting @ 00:30 GMT = 16:30 PST = 17:30 PDT = 8:30 SGT every 10 min -->
+  <section name="SfdcConvertQuoteProcess07">
+    <param name="StartHour" comment="starting @ 00:30 AM GMT every 10 min ">00</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">07</param>
+    <param name="howOften">600000</param>
+    <param name="method">SfdcConvertQuoteProcess.invokeConversions7</param>
+    <param name="outFile">null</param>
+    <param name="size">1</param>
+    <param name="RevOwner">All</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{sfdcconvertquoteapiuser}</param>
+    <param name="Password">#{sfdcconvertquoteapipasswd}</param>
+  </section>
+  
+  <!-- starting @ 00:30 GMT = 16:30 PST = 17:30 PDT = 8:30 SGT every 10 min -->
+  <section name="SfdcConvertQuoteProcess08">
+    <param name="StartHour" comment="starting @ 00:30 AM GMT every 10 min ">00</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">08</param>
+    <param name="howOften">600000</param>
+    <param name="method">SfdcConvertQuoteProcess.invokeConversions8</param>
+    <param name="outFile">null</param>
+    <param name="size">1</param>
+    <param name="RevOwner">All</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{sfdcconvertquoteapiuser}</param>
+    <param name="Password">#{sfdcconvertquoteapipasswd}</param>
+  </section>
+  
+  <!-- starting @ 00:30 GMT = 16:30 PST = 17:30 PDT = 8:30 SGT every 10 min -->
+  <section name="SfdcConvertQuoteProcess09">
+    <param name="StartHour" comment="starting @ 00:30 AM GMT every 10 min ">00</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">09</param>
+    <param name="howOften">600000</param>
+    <param name="method">SfdcConvertQuoteProcess.invokeConversions9</param>
+    <param name="outFile">null</param>
+    <param name="size">1</param>
+    <param name="RevOwner">All</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{sfdcconvertquoteapiuser}</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{sfdcconvertquoteapiuser}</param>
+    <param name="Password">#{sfdcconvertquoteapipasswd}</param>
+  </section>      
+
+  <!-- Contract Creation Process -->
+  <section name="ServicesContractCreationProcess">
+    <param name="StartHour" comment="starting @ 0:10 AM GMT every hour ">00</param>
+    <param name="StartMinute">10</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">3600000</param>
+    <param name="outFile">null</param>
+    <param name="method">ServicesContractCreationProcess.runContractCreationProcess</param>
+    <param name="RevOwner">All</param>
+    <param name="size">25</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{pseapiuser}</param>
+    <param name="Password">#{pseapipasswd}</param>
+  </section>
+
+  <!-- Order Generation Process -->
+  <section name="ServicesOrderCreationProcess">
+    <param name="StartHour" comment="starting @ 0:30 AM GMT every hour ">00</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">3600000</param>
+    <param name="outFile">null</param>
+    <param name="method">ServicesMgmtPSEToOrderCreation.runPSEToOrderProcess</param>
+    <param name="RevOwner"></param>
+    <param name="size">5</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{pseapiuser}</param>
+    <param name="Password">#{pseapipasswd}</param>
+  </section>
+
+  <section name="OpptyTeamProcess">
+    <param name="StartHour" comment="starting @ 0:30 AM GMT every 2 hours ">00</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">7200000</param>
+    <param name="outFile">null</param>
+    <param name="method">OpptyTeamProcess.processOpptyTeam</param>
+    <param name="RevOwner">All</param>
+    <param name="size">10</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{opptyteamapiuser}</param>
+    <param name="Password">#{opptyteamapipasswd}</param>
+  </section>
+  <section name="OpptyTeamProcess02">
+    <param name="StartHour" comment="starting @ 0:30 AM GMT every 2 hours ">00</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">7200000</param>
+    <param name="outFile">null</param>
+    <param name="method">OpptyTeamProcess.processOpptyTeam</param>
+    <param name="RevOwner">All</param>
+    <param name="size">10</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{opptyteamapiuser02}</param>
+    <param name="Password">#{opptyteamapipasswd02}</param>
+  </section>
+  <section name="OpptyTeamProcess03">
+    <param name="StartHour" comment="starting @ 0:30 AM GMT every 2 hours ">00</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">7200000</param>
+    <param name="outFile">null</param>
+    <param name="method">OpptyTeamProcess.processOpptyTeam</param>
+    <param name="RevOwner">All</param>
+    <param name="size">10</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{opptyteamapiuser03}</param>
+    <param name="Password">#{opptyteamapipasswd03}</param>
+  </section>
+  <section name="OpptyTeamProcess04">
+    <param name="StartHour" comment="starting @ 0:30 AM GMT every 2 hours ">00</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">7200000</param>
+    <param name="outFile">null</param>
+    <param name="method">OpptyTeamProcess.processOpptyTeam</param>
+    <param name="RevOwner">All</param>
+    <param name="size">10</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{opptyteamapiuser04}</param>
+    <param name="Password">#{opptyteamapipasswd04}</param>
+  </section>
+  <section name="OpptyTeamProcess05">
+    <param name="StartHour" comment="starting @ 0:30 AM GMT every 2 hours ">00</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">7200000</param>
+    <param name="outFile">null</param>
+    <param name="method">OpptyTeamProcess.processOpptyTeam</param>
+    <param name="RevOwner">All</param>
+    <param name="size">10</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{opptyteamapiuser05}</param>
+    <param name="Password">#{opptyteamapipasswd05}</param>
+  </section>
+  <section name="OpptyTeamProcess06">
+    <param name="StartHour" comment="starting @ 0:30 AM GMT every 2 hours ">00</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">7200000</param>
+    <param name="outFile">null</param>
+    <param name="method">OpptyTeamProcess.processOpptyTeam</param>
+    <param name="RevOwner">All</param>
+    <param name="size">10</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{opptyteamapiuser06}</param>
+    <param name="Password">#{opptyteamapipasswd06}</param>
+  </section>
+  <section name="OpptyTeamProcess07">
+    <param name="StartHour" comment="starting @ 0:30 AM GMT every 2 hours ">00</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">7200000</param>
+    <param name="outFile">null</param>
+    <param name="method">OpptyTeamProcess.processOpptyTeam</param>
+    <param name="RevOwner">All</param>
+    <param name="size">10</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{opptyteamapiuser07}</param>
+    <param name="Password">#{opptyteamapipasswd07}</param>
+  </section>
+  <section name="OpptyTeamProcess08">
+    <param name="StartHour" comment="starting @ 0:30 AM GMT every 2 hours ">00</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">7200000</param>
+    <param name="outFile">null</param>
+    <param name="method">OpptyTeamProcess.processOpptyTeam</param>
+    <param name="RevOwner">All</param>
+    <param name="size">10</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{opptyteamapiuser08}</param>
+    <param name="Password">#{opptyteamapipasswd08}</param>
+  </section>
+  <section name="OpptyTeamProcess09">
+    <param name="StartHour" comment="starting @ 0:30 AM GMT every 2 hours ">00</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">7200000</param>
+    <param name="outFile">null</param>
+    <param name="method">OpptyTeamProcess.processOpptyTeam</param>
+    <param name="RevOwner">All</param>
+    <param name="size">10</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{opptyteamapiuser09}</param>
+    <param name="Password">#{opptyteamapipasswd09}</param>
+  </section>
+  <section name="OpptyTeamProcess10">
+    <param name="StartHour" comment="starting @ 0:30 AM GMT every 2 hours ">00</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">7200000</param>
+    <param name="outFile">null</param>
+    <param name="method">OpptyTeamProcess.processOpptyTeam</param>
+    <param name="RevOwner">All</param>
+    <param name="size">10</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{opptyteamapiuser10}</param>
+    <param name="Password">#{opptyteamapipasswd10}</param>
+  </section>
+  <section name="OpptyTeamProcess11">
+    <param name="StartHour" comment="starting @ 0:30 AM GMT every 2 hours ">00</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">7200000</param>
+    <param name="outFile">null</param>
+    <param name="method">OpptyTeamProcess.processOpptyTeam</param>
+    <param name="RevOwner">All</param>
+    <param name="size">10</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{opptyteamapiuser11}</param>
+    <param name="Password">#{opptyteamapipasswd11}</param>
+  </section>
+  <section name="OpptyTeamProcess12">
+    <param name="StartHour" comment="starting @ 0:30 AM GMT every 2 hours ">00</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">7200000</param>
+    <param name="outFile">null</param>
+    <param name="method">OpptyTeamProcess.processOpptyTeam</param>
+    <param name="RevOwner">All</param>
+    <param name="size">10</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{opptyteamapiuser12}</param>
+    <param name="Password">#{opptyteamapipasswd12}</param>
+  </section>
+
+  <!-- starting @ 14:05 GMT = 6:05 PST = 7:05 PDT 2x every day -->
+  <section name="LegalDeniedPartyProcess">
+    <param name="StartHour" comment="starting @ 14:05 AM GMT ">14</param>
+    <param name="StartMinute">05</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">43200000</param>
+    <param name="outFile">null</param>
+    <param name="method">LegalDeniedPartyProcess.searchDPL</param>
+    <param name="RevOwner">All</param>
+    <param name="size">10</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{ldppapiuser}</param>
+    <param name="Password">#{ldppapipasswd}</param>
+  </section>
+
+  <!-- starting @ 06:15 GMT = 22:15 PST = 23:15 PDT  (late night in AMER) -->
+  <section name="ContractExpirationProcess">
+    <param name="StartHour" comment="starting @ 06:15 GMT every 4x a day (late night in AMER)">06</param>
+    <param name="StartMinute">15</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">14400000</param>
+    <param name="outFile">null</param>
+    <param name="method">ContractExpirationProcess.expireContracts</param>
+    <param name="size">100</param>
+    <param name="RevOwner"></param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{contractexpuser}</param>
+    <param name="Password">#{contractexppasswd}</param>
+  </section>    
+  
+  <!-- Auto Renewal Notification Process enteries-->
+  <!-- starting @ 4:25 GMT = 20:25 PST = 21:25 PDT -->
+  <section name="AutoRenewalNotificationProcessAMER">
+    <param name="StartHour" comment="starting @ 4:25 GMT once a day">04</param>
+    <param name="StartMinute">25</param>
+    <param name="StartSecond">00</param>
+    <param name="method">AutoRenewalNotificationProcess.runAutoRenewalNotificationProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">10</param>
+    <param name="RevOwner">AMER</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{autorenewnotificationapiuser}</param>
+    <param name="Password">#{autorenewnotificationapipasswd}</param>
+  </section>
+
+ <!-- starting @ 4:25 GMT = 20:25 PST = 21:25 PDT -->
+  <section name="AutoRenewalNotificationProcessJAPAN">
+    <param name="StartHour" comment="starting @ 4:25 GMT once a day">04</param>
+    <param name="StartMinute">25</param>
+    <param name="StartSecond">00</param>
+    <param name="method">AutoRenewalNotificationProcess.runAutoRenewalNotificationProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">10</param>
+    <param name="RevOwner">JAPAN</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{autorenewnotificationapiuser}</param>
+    <param name="Password">#{autorenewnotificationapipasswd}</param>
+  </section>
+  
+  <!-- starting @ 4:25 GMT = 20:25 PST = 21:25 PDT -->
+  <section name="AutoRenewalNotificationProcessEMEA">
+    <param name="StartHour" comment="starting @ 4:25 GMT once a day">04</param>
+    <param name="StartMinute">25</param>
+    <param name="StartSecond">00</param>
+    <param name="method">AutoRenewalNotificationProcess.runAutoRenewalNotificationProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">10</param>
+    <param name="RevOwner">EMEA</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{autorenewnotificationapiuser}</param>
+    <param name="Password">#{autorenewnotificationapipasswd}</param>
+  </section>
+  
+  <!-- starting @ 4:25 GMT = 20:25 PST = 21:25 PDT -->
+  <section name="AutoRenewalNotificationProcessCANADA">
+    <param name="StartHour" comment="starting @ 4:25 GMT once a day">04</param>
+    <param name="StartMinute">25</param>
+    <param name="StartSecond">00</param>
+    <param name="method">AutoRenewalNotificationProcess.runAutoRenewalNotificationProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">10</param>
+    <param name="RevOwner">CANADA</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{autorenewnotificationapiuser}</param>
+    <param name="Password">#{autorenewnotificationapipasswd}</param>
+  </section>
+  
+  <!-- starting @ 4:25 GMT = 20:25 PST = 21:25 PDT -->
+  <section name="AutoRenewalNotificationProcessAPAC">
+    <param name="StartHour" comment="starting @ 4:25 GMT once a day">04</param>
+    <param name="StartMinute">25</param>
+    <param name="StartSecond">00</param>
+    <param name="method">AutoRenewalNotificationProcess.runAutoRenewalNotificationProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">10</param>
+    <param name="RevOwner">APAC</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{autorenewnotificationapiuser}</param>
+    <param name="Password">#{autorenewnotificationapipasswd}</param>
+  </section>
+     <!-- starting @ 4:30 GMT = 20:30 PST = 21:30 PDT -->
+  <section name="AutoRenewalNotificationProcessANZ">
+    <param name="StartHour" comment="starting @ 4:30 GMT once a day">04</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">00</param>
+    <param name="method">AutoRenewalNotificationProcess.runAutoRenewalNotificationProcess</param>
+    <param name="outFile">null</param>
+    <param name="size">10</param>
+    <param name="RevOwner">APAC</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{autorenewnotificationapiuser}</param>
+    <param name="Password">#{autorenewnotificationapipasswd}</param>
+    <param name="StartSuspended">1</param>
+  </section>
+
+  <!-- ramp process entries-->
+  <!-- starting @ 5:05 GMT = 21:05 PST = 22:05 PDT every 60 min -->
+    <section name="RampProcess">
+        <param name="StartHour" comment="starting @ 5:05 AM GMT every 60 min ">05</param>
+        <param name="StartMinute">05</param>
+        <param name="StartSecond">00</param>
+        <param name="howOften">3600000</param>
+        <param name="method">RampProcess.processOrders</param>
+        <param name="outFile">null</param>
+        <param name="size">100</param>
+        <param name="RevOwner">All</param>
+        <param name="enableResponseLog">false</param>
+        <param name="Username">#{sfdcrampapiuser}</param>
+        <param name="Password">#{sfdcrampapipasswd}</param>
+    </section>     
+
+  <!-- commissioning process entries-->
+  <!-- starting @ 8:05 GMT = 00:05 PST = 01:05 PDT runs every 2 hours -->
+  <section name="CommissioningProcessMultiBatchAMERMonthEnd">
+    <param name="howOften">7200000</param>
+    <param name="StartHour" >10</param>
+    <param name="StartMinute">05</param>
+    <param name="StartSecond">00</param>
+    <param name="outFile">null</param>
+    <param name="method">CommissioningProcess.runCommissioningProcessMultiBatch</param>
+    <param name="outFile">null</param>
+	<!-- Going forward, the CommissioningProcess size is determined by custom metadata type setting 
+	(basebiz\sfdc\metadata\customMetadata\CEOMultiBatchJobSize.md) -->
+    <param name="size">1</param>
+    <param name="RevOwner">AMER</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{commissionapiuser}</param>
+    <param name="Password">#{commissionapipasswd}</param>
+  </section>
+  
+  <!-- starting @ 8:05 GMT = 00:05 PST = 01:05 PDT runs every 2 hours -->
+  <section name="CommissioningProcessMultiBatchEMEAMonthEnd">
+    <param name="howOften">7200000</param>
+    <param name="StartHour">10</param>
+    <param name="StartMinute">05</param>
+    <param name="StartSecond">00</param>
+    <param name="outFile">null</param>
+    <param name="method">CommissioningProcess.runCommissioningProcessMultiBatch</param>
+    <param name="outFile">null</param>
+	<!-- Going forward, the CommissioningProcess size is determined by custom metadata type setting 
+	(basebiz\sfdc\metadata\customMetadata\CEOMultiBatchJobSize.md) -->
+    <param name="size">1</param>
+    <param name="RevOwner">EMEA</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{commissionapiuser}</param>
+    <param name="Password">#{commissionapipasswd}</param>
+  </section>
+  
+  <!-- starting @ 8:05 GMT = 00:05 PST = 01:05 PDT runs every 8 hours -->
+  <section name="CommissioningProcessAMER">
+    <param name="howOften">28800000</param>
+    <param name="StartHour" >08</param>
+    <param name="StartMinute">05</param>
+    <param name="StartSecond">00</param>
+    <param name="outFile">null</param>
+    <param name="method">CommissioningProcess.runCommissioningProcess</param>
+    <param name="outFile">null</param>
+	<!-- Going forward, the CommissioningProcess size is determined by custom metadata type setting (basebiz\sfdc\metadata\customMetadata\CEOSingleBatchJobSize.md) -->
+    <param name="size">1</param>
+    <param name="RevOwner">AMER</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{commissionapiuser}</param>
+    <param name="Password">#{commissionapipasswd}</param>
+  </section>
+  
+  <!-- starting @ 8:05 GMT = 00:05 PST = 01:05 PDT runs every 8 hours -->
+  <section name="CommissioningProcessEMEA">
+    <param name="howOften">28800000</param>
+    <param name="StartHour">08</param>
+    <param name="StartMinute">05</param>
+    <param name="StartSecond">00</param>
+    <param name="outFile">null</param>
+    <param name="method">CommissioningProcess.runCommissioningProcess</param>
+    <param name="outFile">null</param>
+	<!-- Going forward, the CommissioningProcess size is determined by custom metadata type setting (basebiz\sfdc\metadata\customMetadata\CEOSingleBatchJobSize.md) -->
+    <param name="size">1</param>
+    <param name="RevOwner">EMEA</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{commissionapiuser}</param>
+    <param name="Password">#{commissionapipasswd}</param>
+  </section>
+  
+  <!-- starting @ 8:05 GMT = 00:05 PST = 01:05 PDT runs every 8 hours -->
+  <section name="CommissioningProcessAPAC">
+    <param name="howOften">28800000</param>
+    <param name="StartHour">08</param>
+    <param name="StartMinute">05</param>
+    <param name="StartSecond">00</param>
+    <param name="outFile">null</param>
+    <param name="method">CommissioningProcess.runCommissioningProcess</param>
+    <param name="outFile">null</param>
+	<!-- Going forward, the CommissioningProcess size is determined by custom metadata type setting (basebiz\sfdc\metadata\customMetadata\CEOSingleBatchJobSize.md) -->
+    <param name="size">1</param>
+    <param name="RevOwner">APAC</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{commissionapiuser}</param>
+    <param name="Password">#{commissionapipasswd}</param>
+  </section>
+  
+  <!-- starting @ 8:05 GMT = 00:05 PST = 01:05 PDT runs every 8 hours -->
+  <section name="CommissioningProcessCANADA">
+    <param name="howOften">28800000</param>
+    <param name="StartHour">08</param>
+    <param name="StartMinute">05</param>
+    <param name="StartSecond">00</param>
+    <param name="outFile">null</param>
+    <param name="method">CommissioningProcess.runCommissioningProcess</param>
+    <param name="outFile">null</param>
+	<!-- Going forward, the CommissioningProcess size is determined by custom metadata type setting (basebiz\sfdc\metadata\customMetadata\CEOSingleBatchJobSize.md) -->
+    <param name="size">1</param>
+    <param name="RevOwner">CANADA</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{commissionapiuser}</param>
+    <param name="Password">#{commissionapipasswd}</param>
+  </section>
+  
+    <!-- starting @ 8:05 GMT = 00:05 PST = 01:05 PDT runs every 8 hours -->
+  <section name="CommissioningProcessJAPAN">
+    <param name="howOften">28800000</param>
+    <param name="StartHour">08</param>
+    <param name="StartMinute">05</param>
+    <param name="StartSecond">00</param>
+    <param name="outFile">null</param>
+    <param name="method">CommissioningProcess.runCommissioningProcess</param>
+    <param name="outFile">null</param>
+	<!-- Going forward, the CommissioningProcess size is determined by custom metadata type setting (basebiz\sfdc\metadata\customMetadata\CEOSingleBatchJobSize.md) -->
+    <param name="size">1</param>
+    <param name="RevOwner">JAPAN</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{commissionapiuser}</param>
+    <param name="Password">#{commissionapipasswd}</param>
+  </section>
+  
+    <!-- starting @ 7:00 GMT = 23:00 PST = 00:00 PDT = once a day -->
+  <section name="DeclineNotificationProcessAMER">
+    <param name="StartHour" comment="starting @ 7 AM GMT once a day ">07</param>
+    <param name="StartMinute">00</param>
+    <param name="StartSecond">00</param>
+    <param name="outFile">null</param>
+    <param name="method">DeclineNotificationProcess.runDeclineNotificationProcess</param>
+    <param name="size">10</param>
+    <param name="RevOwner">AMER</param>
+    <param name="MaxIterations">1</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{billingapiuser}</param>
+    <param name="Password">#{billingapipasswd}</param>
+  </section>
+  
+      <!-- starting @ 7:00 GMT = 23:00 PST = 00:00 PDT = once a day -->
+  <section name="DeclineNotificationProcessEMEA">
+    <param name="StartHour" comment="starting @ 7 AM GMT once a day ">07</param>
+    <param name="StartMinute">00</param>
+    <param name="StartSecond">00</param>
+    <param name="outFile">null</param>
+    <param name="method">DeclineNotificationProcess.runDeclineNotificationProcess</param>
+    <param name="size">10</param>
+    <param name="RevOwner">EMEA</param>
+    <param name="MaxIterations">1</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{billingapiuser}</param>
+    <param name="Password">#{billingapipasswd}</param>
+  </section>
+  
+      <!-- starting @ 7:00 GMT = 23:00 PST = 00:00 PDT = once a day -->
+  <section name="DeclineNotificationProcessAPAC">
+    <param name="StartHour" comment="starting @ 7 AM GMT once a day ">07</param>
+    <param name="StartMinute">00</param>
+    <param name="StartSecond">00</param>
+    <param name="outFile">null</param>
+    <param name="method">DeclineNotificationProcess.runDeclineNotificationProcess</param>
+    <param name="size">10</param>
+    <param name="RevOwner">APAC</param>
+    <param name="MaxIterations">1</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{billingapiuser}</param>
+    <param name="Password">#{billingapipasswd}</param>
+  </section>
+        <!-- starting @ 7:05 GMT = 23:05 PST = 00:05 PDT = once a day -->
+  <section name="DeclineNotificationProcessANZ">
+    <param name="StartHour" comment="starting @ 7 AM GMT once a day ">07</param>
+    <param name="StartMinute">05</param>
+    <param name="StartSecond">00</param>
+    <param name="outFile">null</param>
+    <param name="method">DeclineNotificationProcess.runDeclineNotificationProcess</param>
+    <param name="size">10</param>
+    <param name="RevOwner">APAC</param>
+    <param name="MaxIterations">1</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{billingapiuser}</param>
+    <param name="Password">#{billingapipasswd}</param>
+  </section>
+  
+      <!-- starting @ 7:00 GMT = 23:00 PST = 00:00 PDT = once a day -->
+  <section name="DeclineNotificationProcessCANADA">
+    <param name="StartHour" comment="starting @ 7 AM GMT once a day ">07</param>
+    <param name="StartMinute">00</param>
+    <param name="StartSecond">00</param>
+    <param name="outFile">null</param>
+    <param name="method">DeclineNotificationProcess.runDeclineNotificationProcess</param>
+    <param name="size">10</param>
+    <param name="RevOwner">CANADA</param>
+    <param name="MaxIterations">1</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{billingapiuser}</param>
+    <param name="Password">#{billingapipasswd}</param>
+  </section>
+  
+      <!-- starting @ 7:00 GMT = 23:00 PST = 00:00 PDT = once a day -->
+  <section name="DeclineNotificationProcessJAPAN">
+    <param name="StartHour" comment="starting @ 7 AM GMT once a day ">07</param>
+    <param name="StartMinute">00</param>
+    <param name="StartSecond">00</param>
+    <param name="outFile">null</param>
+    <param name="method">DeclineNotificationProcess.runDeclineNotificationProcess</param>
+    <param name="size">10</param>
+    <param name="RevOwner">JAPAN</param>
+    <param name="MaxIterations">1</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{billingapiuser}</param>
+    <param name="Password">#{billingapipasswd}</param>
+  </section>
+  
+   <!-- starting @ 8:05 GMT = 00:05 PST = 01:05 PDT runs every 2 hours -->
+  <section name="CommissioningProcessAMERMonthEnd">
+    <param name="howOften">7200000</param>
+    <param name="StartHour" >10</param>
+    <param name="StartMinute">05</param>
+    <param name="StartSecond">00</param>
+    <param name="outFile">null</param>
+    <param name="method">CommissioningProcess.runCommissioningProcess</param>
+    <param name="outFile">null</param>
+	<!-- Going forward, the CommissioningProcess size is determined by custom metadata type setting (basebiz\sfdc\metadata\customMetadata\CEOSingleBatchJobSize.md) -->
+    <param name="size">1</param>
+    <param name="RevOwner">AMER</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{commissionapiuser}</param>
+    <param name="Password">#{commissionapipasswd}</param>
+  </section>
+  <!-- starting @ 8:05 GMT = 00:05 PST = 01:05 PDT runs every 2 hours -->
+  <section name="CommissioningProcessEMEAMonthEnd">
+    <param name="howOften">7200000</param>
+    <param name="StartHour">10</param>
+    <param name="StartMinute">05</param>
+    <param name="StartSecond">00</param>
+    <param name="outFile">null</param>
+    <param name="method">CommissioningProcess.runCommissioningProcess</param>
+    <param name="outFile">null</param>
+	<!-- Going forward, the CommissioningProcess size is determined by custom metadata type setting (basebiz\sfdc\metadata\customMetadata\CEOSingleBatchJobSize.md) -->
+    <param name="size">1</param>
+    <param name="RevOwner">EMEA</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{commissionapiuser}</param>
+    <param name="Password">#{commissionapipasswd}</param>
+  </section>
+  
+  <!-- starting @ 8:05 GMT = 00:05 PST = 01:05 PDT runs every 2 hours -->
+  <section name="CommissioningProcessAPACMonthEnd">
+    <param name="howOften">7200000</param>
+    <param name="StartHour">10</param>
+    <param name="StartMinute">05</param>
+    <param name="StartSecond">00</param>
+    <param name="outFile">null</param>
+    <param name="method">CommissioningProcess.runCommissioningProcess</param>
+    <param name="outFile">null</param>
+	<!-- Going forward, the CommissioningProcess size is determined by custom metadata type setting (basebiz\sfdc\metadata\customMetadata\CEOSingleBatchJobSize.md) -->
+    <param name="size">1</param>
+    <param name="RevOwner">APAC</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{commissionapiuser}</param>
+    <param name="Password">#{commissionapipasswd}</param>
+  </section>
+  
+  <!-- starting @ 8:05 GMT = 00:05 PST = 01:05 PDT runs every 2 hours -->
+  <section name="CommissioningProcessCANADAMonthEnd">
+    <param name="howOften">7200000</param>
+    <param name="StartHour">10</param>
+    <param name="StartMinute">05</param>
+    <param name="StartSecond">00</param>
+    <param name="outFile">null</param>
+    <param name="method">CommissioningProcess.runCommissioningProcess</param>
+    <param name="outFile">null</param>
+	<!-- Going forward, the CommissioningProcess size is determined by custom metadata type setting (basebiz\sfdc\metadata\customMetadata\CEOSingleBatchJobSize.md) -->
+    <param name="size">1</param>
+    <param name="RevOwner">CANADA</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{commissionapiuser}</param>
+    <param name="Password">#{commissionapipasswd}</param>
+  </section>
+  
+  <!-- starting @ 8:05 GMT = 00:05 PST = 01:05 PDT runs every 2 hours -->
+  <section name="CommissioningProcessJAPANMonthEnd">
+    <param name="howOften">7200000</param>
+    <param name="StartHour">10</param>
+    <param name="StartMinute">05</param>
+    <param name="StartSecond">00</param>
+    <param name="outFile">null</param>
+    <param name="method">CommissioningProcess.runCommissioningProcess</param>
+    <param name="outFile">null</param>
+	<!-- Going forward, the CommissioningProcess size is determined by custom metadata type setting (basebiz\sfdc\metadata\customMetadata\CEOSingleBatchJobSize.md) -->
+    <param name="size">1</param>
+    <param name="RevOwner">JAPAN</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{commissionapiuser}</param>
+    <param name="Password">#{commissionapipasswd}</param>
+  </section>
+  
+  <!-- starting @ 00:34 GMT = 16:34 PST = 17:30 PDT every 10 mins-->
+  <section name="AssetBatchProcess">
+    <param name="StartHour" comment="starting @ 00:34 AM GMT every 10 mins ">00</param>
+    <param name="StartMinute">34</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">600000</param>
+    <param name="outFile">null</param>
+    <param name="method">AssetBatchProcess.runAssetBatchProcess</param>
+    <param name="size">10</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{assetapiuser}</param>
+    <param name="Password">#{assetapipasswd}</param>
+  </section>
+
+    <!-- starting @ 2:15 GMT = 18:15 PST = 19:15 PDT every 60 mins-->
+  <section name="AssetExpirationProcess">
+    <param name="StartHour" comment="starting @ 2:15 AM GMT every 60 mins ">2</param>
+    <param name="StartMinute">15</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">3600000</param>
+    <param name="outFile">null</param>
+    <param name="method">AssetExpirationProcess.runAssetExpirationBatchProcess</param>
+    <param name="size">30</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{assetapiuser}</param>
+    <param name="Password">#{assetapipasswd}</param>
+    <param name="ReadTimeout">1080000</param> 
+  </section>
+  
+  <!-- starting @ 1:07 GMT = 17:07 PST = 18:07 PDT = 9:07 SGT every 60 min -->
+  <section name="SpecialistForecastAutoGenProcess">
+    <param name="StartHour" comment="starting @ 1:07 AM GMT every 60 min ">1</param>
+    <param name="StartMinute">00</param>
+    <param name="StartSecond">07</param>
+    <param name="howOften">3600000</param>
+    <param name="method">SpecialistForecastAutoGenProcess.generateRecords</param>
+    <param name="outFile">null</param>
+    <param name="size">20</param>
+    <param name="RevOwner">All</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{sfautogenapiuser}</param>
+    <param name="Password">#{sfautogenapipasswd}</param>
+  </section>
+  <section name="SpecialistForecastAutoGenProcess02">
+    <param name="StartHour" comment="starting @ 1:07 AM GMT every 60 min ">1</param>
+    <param name="StartMinute">00</param>
+    <param name="StartSecond">07</param>
+    <param name="howOften">3600000</param>
+    <param name="method">SpecialistForecastAutoGenProcess.generateRecords</param>
+    <param name="outFile">null</param>
+    <param name="size">20</param>
+    <param name="RevOwner">All</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{sfautogenapiuser02}</param>
+    <param name="Password">#{sfautogenapipasswd02}</param>
+  </section>
+  <section name="SpecialistForecastAutoGenProcess03">
+    <param name="StartHour" comment="starting @ 1:07 AM GMT every 60 min ">1</param>
+    <param name="StartMinute">00</param>
+    <param name="StartSecond">07</param>
+    <param name="howOften">3600000</param>
+    <param name="method">SpecialistForecastAutoGenProcess.generateRecords</param>
+    <param name="outFile">null</param>
+    <param name="size">20</param>
+    <param name="RevOwner">All</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{sfautogenapiuser03}</param>
+    <param name="Password">#{sfautogenapipasswd03}</param>
+  </section>
+  <section name="SpecialistForecastAutoGenProcess04">
+    <param name="StartHour" comment="starting @ 1:07 AM GMT every 60 min ">1</param>
+    <param name="StartMinute">00</param>
+    <param name="StartSecond">07</param>
+    <param name="howOften">3600000</param>
+    <param name="method">SpecialistForecastAutoGenProcess.generateRecords</param>
+    <param name="outFile">null</param>
+    <param name="size">20</param>
+    <param name="RevOwner">All</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{sfautogenapiuser04}</param>
+    <param name="Password">#{sfautogenapipasswd04}</param>
+  </section>
+  <section name="SpecialistForecastAutoGenProcess05">
+    <param name="StartHour" comment="starting @ 1:07 AM GMT every 60 min ">1</param>
+    <param name="StartMinute">00</param>
+    <param name="StartSecond">07</param>
+    <param name="howOften">3600000</param>
+    <param name="method">SpecialistForecastAutoGenProcess.generateRecords</param>
+    <param name="outFile">null</param>
+    <param name="size">20</param>
+    <param name="RevOwner">All</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{sfautogenapiuser05}</param>
+    <param name="Password">#{sfautogenapipasswd05}</param>
+  </section>    
+  <section name="ArSfdcLockProcess">
+      <!-- Every 10 minutes Hour starts at 21:00 PST = 22:00 PDT = 05:00 GMT -->
+      <param name="howOften">600000</param>
+      <param name="StartHour">05</param>
+      <param name="StartMinute">00</param>
+      <param name="Lock">1</param>
+      <param name="UnLock">1</param>
+  </section>
+
+  <!-- starting @ 18:00 GMT = 10:00 PST = 11:00 PDT every day (morning in AMER) -->
+  <section name="OverageOrderProcess">
+    <param name="StartHour" comment="starting @ 6:00 PM GMT - every 6 hours a day ">6</param>
+    <param name="StartMinute">00</param>
+    <param name="StartSecond">00</param>
+	<param name="howOften">21600000</param>
+    <param name="method">OverageOrderProcess.processMUVrecords</param>
+    <param name="outFile">null</param>
+    <param name="size">10</param>
+    <param name="RevOwner">ALL</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{entitleapiuser}</param>
+    <param name="Password">#{entitleapipasswd}</param>
+  </section>
+  
+  <!-- starting @ 06:30 GMT = 22:30 PST = 23:30 PDT every day(late night in AMER) -->
+  <section name="EntitlementCreationProcessAMER">
+    <param name="StartHour" comment="starting @ 06:30 GMT every day (late night in AMER)">06</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">00</param>
+    <param name="outFile">null</param>
+    <param name="method">EntitlementCreationProcess.runCreateEntitlementProcess</param>
+    <param name="size">100</param>
+    <param name="RevOwner">AMER</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{entitleapiuser}</param>
+    <param name="Password">#{entitleapipasswd}</param>
+  </section> 
+  
+  <!-- starting @ 07:00 GMT = 23:00 PST = 24:00 PDT every day(late night in AMER) -->
+  <section name="EntitlementCreationProcessAPAC">
+    <param name="StartHour" comment="starting @ 07:00 GMT every day (late night in AMER)">07</param>
+    <param name="StartMinute">00</param>
+    <param name="StartSecond">00</param>
+    <param name="outFile">null</param>
+    <param name="method">EntitlementCreationProcess.runCreateEntitlementProcess</param>
+    <param name="size">100</param>
+    <param name="RevOwner">APAC</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{entitleapiuser}</param>
+    <param name="Password">#{entitleapipasswd}</param>
+  </section> 
+  
+  <!-- starting @ 07:30 GMT = 23:30 PST = 00:30 PDT every day(late night in AMER) -->
+  <section name="EntitlementCreationProcessEMEA">
+    <param name="StartHour" comment="starting @ 07:30 GMT every day (late night in AMER)">07</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">00</param>
+    <param name="outFile">null</param>
+    <param name="method">EntitlementCreationProcess.runCreateEntitlementProcess</param>
+    <param name="size">100</param>
+    <param name="RevOwner">EMEA</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{entitleapiuser}</param>
+    <param name="Password">#{entitleapipasswd}</param>
+  </section> 
+  
+  <!-- starting @ 08:00 GMT = 24:00 PST = 1:00 PDT every day(late night in AMER) -->
+  <section name="EntitlementCreationProcessJAPAN">
+    <param name="StartHour" comment="starting @ 08:00 GMT every day (late night in AMER)">08</param>
+    <param name="StartMinute">00</param>
+    <param name="StartSecond">00</param>
+    <param name="outFile">null</param>
+    <param name="method">EntitlementCreationProcess.runCreateEntitlementProcess</param>
+    <param name="size">100</param>
+    <param name="RevOwner">JAPAN</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{entitleapiuser}</param>
+    <param name="Password">#{entitleapipasswd}</param>
+  </section> 
+  
+  <!-- starting @ 08:30 GMT = 00:30 PST = 1:30 PDT every day(late night in AMER) -->
+  <section name="EntitlementCreationProcessCANADA">
+    <param name="StartHour" comment="starting @ 08:00 GMT every day (late night in AMER)">08</param>
+    <param name="StartMinute">30</param>
+    <param name="StartSecond">00</param>
+    <param name="outFile">null</param>
+    <param name="method">EntitlementCreationProcess.runCreateEntitlementProcess</param>
+    <param name="size">100</param>
+    <param name="RevOwner">CANADA</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{entitleapiuser}</param>
+    <param name="Password">#{entitleapipasswd}</param>
+  </section> 
+
+  <!-- starting @ 1:08 GMT = 17:08 PST = 18:08 PDT = 9:08 SGT every 60 min -->
+  <section name="VATProcess">
+    <param name="StartHour" comment="starting @ 1:08 AM GMT every 60 min ">1</param>
+    <param name="StartMinute">08</param>
+    <param name="StartSecond">00</param>
+    <param name="howOften">3600000</param>
+    <param name="outFile">null</param>
+    <param name="method">SfdcVATProcess.checkVAT</param>
+    <param name="RevOwner">All</param>
+    <param name="size">10</param>
+    <param name="enableResponseLog">false</param>
+    <param name="Username">#{vatapiuser}</param>
+    <param name="Password">#{vatapipasswd}</param>
+  </section>
+    
+  <!-- starting @ 6:30 GMT = 22:30 PST = 23:30 PDT every day (late night in AMER) -->
+	<section name="ContractVATValidationProcessEMEA">
+		<param name="StartHour" comment="starting @ 6:30 GMT every day (late night in AMER)">06</param>
+		<param name="StartMinute">30</param>
+		<param name="StartSecond">00</param>
+		<param name="method">ContractVATValidationProcess.addContractsToQueueForVATValidation</param>
+		<param name="outFile">null</param>
+		<param name="size">100</param>
+		<param name="RevOwner">EMEA</param>
+		<param name="enableResponseLog">false</param>
+		<param name="Username">#{vatapiuser}</param>
+		<param name="Password">#{vatapipasswd}</param>
+	</section>
+
+    <!-- starting @ 05:00 GMT = 21:00 PST = 22:00 PDT = 13:00 SGT -->
+    <section name="Renewals30DEDailyProcess">
+        <param name="StartHour" comment="starting @ 5:00 AM GMT every day">05</param>
+        <param name="StartMinute">00</param>
+        <param name="StartSecond">00</param>
+        <param name="method">SfdcAutomate30DEProcess.invoke30DEProcess</param>
+        <param name="outFile">null</param>
+        <param name="size">100</param>
+        <param name="RevOwner">All</param>
+        <param name="enableResponseLog">false</param>
+        <param name="Username">#{thirtydeapiuser}</param>
+        <param name="Password">#{thirtydeapipassword}</param>
+    </section>
+    <!-- starting @ 12:00 GMT = 04:00 PST = 05:00 PDT = 20:00 SGT -->
+    <section name="Renewals30DEFinalProcess">
+        <param name="StartHour" comment="starting @ 12:00 PM GMT every day">12</param>
+        <param name="StartMinute">00</param>
+        <param name="StartSecond">00</param>
+        <param name="method">SfdcAutomate30DEProcess.invoke30DEFinalProcess</param>
+        <param name="outFile">null</param>
+        <param name="size">100</param>
+        <param name="RevOwner">All</param>
+        <param name="enableResponseLog">false</param>
+        <param name="Username">#{thirtydeapiuser}</param>
+        <param name="Password">#{thirtydeapipassword}</param>
+    </section>
+</iniFile>
